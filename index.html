@@ -42,7 +42,7 @@
       handleAddFriends() {
 
       }
-      handleRemoveFriends(name) {
+      handleRemoveFriends = (name) => {
         this.setState((currentState) => {
           return {
             friends: currentState.friends.filter((friend) => friend !== name)
